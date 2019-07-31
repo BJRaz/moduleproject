@@ -1,0 +1,16 @@
+{
+  "name": "typescript_modules",
+  "version": "1.0.0",
+  "description": "A small project to demonstrate and test the use of modules...",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -p ./tsconfig.json",
+    "start": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "stringmodule": "file:stringmodule"
+  }
+}

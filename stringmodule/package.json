@@ -1,0 +1,11 @@
+{
+  "name": "stringmodule",
+  "version": "1.0.0",
+  "description": "This module/lirary is just for simulating a library implemented in js only.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brian Juul Rasmussen",
+  "license": "ISC"
+}
