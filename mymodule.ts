@@ -21,7 +21,7 @@ export class MyList<T> implements Iterator<T> {
     }
 }
 
-class MyIteratorResult<T> implements IteratorResult<T> {
+class MyIteratorResult<T>  {   //implements IteratorResult<T>
 
     constructor(protected isDone: boolean, protected hasValue : T) {
         this.done = isDone;

@@ -11,6 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "stringmodule": "file:stringmodule"
+    "mongodb": "^3.6.4",
+    "stringmodule": "file:stringmodule",
+    "typescript": "^4.1.5"
+  },
+  "devDependencies": {
+    "@types/mongodb": "^3.6.7"
   }
 }

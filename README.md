@@ -14,7 +14,7 @@ Build the program
 
 .. and run
 
-```]# node main.js```
+```]# node dist/main.js```
 
 
 

@@ -1,8 +1,9 @@
-import { StringUtils } from "./lib/stringutils"     // local library/module
-import { Horse, MyList } from "./mymodule"          //       --
+import { StringUtils } from "./lib/stringutils";     // local library/module
+import { Horse, MyList } from "./mymodule";          //       --
 import * as sm from "stringmodule";                 // external library/module
+import * as data from "./lib/db";
 
-
+// generator - returns an iterator
 function* f() {
     for(let i=0;i<10;i++)
         yield i;
@@ -26,9 +27,23 @@ class Main
 
     public static Start() : number {
 
-        for (const iterator of f()) {
-            console.log(iterator);
+        // calls f() which returns an iterator
+        let iterator = f();
+        iterator.next();
+        for (const item of iterator) {
+            console.log(item);
         }
+        
+        data.getData().then((o : Score[]) => {
+            o.forEach(element => {
+                console.log(element.game + ', ' + element.created)
+            });
+        });
+
+        
+        return 0;
+    }
+    public static test() {
         var m = new Main();
         var hest = m.getData().then(v => {
             console.log(v);
@@ -56,9 +71,7 @@ class Main
             console.log(obj);
         }
         
-        return 0;
     }
-
 }
 
 Main.Start();

@@ -1,4 +1,4 @@
-// this typedefinition file, declares types for 'somemodule' while 'somemodule' does not provide types by itself
+// this typedefinition file, declares types for 'stringmodule' while it does not provide types by itself
 
 declare module "stringmodule" {
     export function returnString(): string ;
